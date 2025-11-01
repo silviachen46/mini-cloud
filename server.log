@@ -1,0 +1,21 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> github.com/silviachen46/mini-cloud/internal/api.RegisterBasic.func1 (3 handlers)
+[GIN-debug] PUT    /v1/object/:key           --> github.com/silviachen46/mini-cloud/internal/api.RegisterBasic.func2 (3 handlers)
+[GIN-debug] GET    /v1/object/:key/head      --> github.com/silviachen46/mini-cloud/internal/api.RegisterBasic.func3 (3 handlers)
+[GIN-debug] GET    /v1/object/:key           --> github.com/silviachen46/mini-cloud/internal/api.RegisterBasic.func4 (3 handlers)
+[GIN-debug] DELETE /v1/object/:key           --> github.com/silviachen46/mini-cloud/internal/api.RegisterBasic.func5 (3 handlers)
+2025/11/01 00:21:35 [route] GET    /v1/object/:key
+2025/11/01 00:21:35 [route] GET    /v1/object/:key/head
+2025/11/01 00:21:35 [route] GET    /health
+2025/11/01 00:21:35 [route] PUT    /v1/object/:key
+2025/11/01 00:21:35 [route] DELETE /v1/object/:key
+2025/11/01 00:21:35 listening on :8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2025/11/01 - 00:22:37 | 200 |      268.25µs |             ::1 | GET      "/health"
+[GIN] 2025/11/01 - 00:22:46 | 200 |    3.859958ms |             ::1 | PUT      "/v1/object/hello.txt"
+[GIN] 2025/11/01 - 00:22:56 | 200 |     461.125µs |             ::1 | GET      "/v1/object/hello.txt"
