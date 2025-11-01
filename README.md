@@ -176,4 +176,4 @@ It’s designed for learning **systems design**, **Go concurrency**, and **high-
 
 ## 📄 License
 
-MIT License © 2025 [Your Name]
+MIT License © 2025 Shuyu Chen
